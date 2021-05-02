@@ -13,7 +13,7 @@
 |----------|----------|----------|-------------|
 | `m` | `method` | yes | `rippled` API method |
 | `d` | `data` | no | Post Body, JSON RPC `params` property only |
-| `t` | `testata` | no | Use test data request instead of custom `data` |
+| `t` | `testdata` | no | Use test data request instead of custom `data` |
 | `x` | `exec` | no | Execute API call |
 | `v` | `verbose` | no | Verbose |
 | `p` | `pretty` | no Pretty print JSON response |
