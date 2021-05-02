@@ -10,6 +10,7 @@ import (
 	"github.com/grokify/simplego/net/http/httpsimple"
 	"github.com/jessevdk/go-flags"
 
+	gorippled "github.com/go-xrp/go-rippled"
 	"github.com/go-xrp/go-rippled/data"
 )
 
@@ -33,26 +34,30 @@ func main() {
 		log.Fatal(err)
 	}
 
-	reqBodyBytes := []byte{}
+	var reqBody interface{}
 
 	if len(opts.Data) > 0 {
-		reqBodyBytes = []byte(opts.Data)
-	} else if len(opts.TestData) > 0 {
-		reqBodyBytes, err = data.ExampleJsonRequest(opts.Method)
+		reqBodyStruct, err := gorippled.BuildJsonRpcRequestBody(opts.Method, []byte(opts.Data))
 		if err != nil {
 			log.Fatal(err)
 		}
-	}
-
-	if len(opts.Verbose) > 0 {
-		fmt.Println(string(reqBodyBytes))
+		reqBody = reqBodyStruct
+	} else if len(opts.TestData) > 0 {
+		reqBodyBytes, err := data.ExampleJsonRequest(opts.Method)
+		if err != nil {
+			log.Fatal(err)
+		}
+		reqBody = reqBodyBytes
+		if len(opts.Verbose) > 0 {
+			fmt.Println(string(reqBodyBytes))
+		}
 	}
 
 	if len(opts.Exec) > 0 {
 		req := httpsimple.SimpleRequest{
 			Method: http.MethodPost,
 			URL:    RippledJsonRpcUrl,
-			Body:   reqBodyBytes,
+			Body:   reqBody,
 			IsJSON: true}
 
 		resp, err := httpsimple.Do(req)
