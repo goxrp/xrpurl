@@ -7,6 +7,12 @@
 
 `xrpurl` is a command line tool to make calling `rippled` servers easy.
 
+## Installation
+
+```
+$ go get github.com/go-xrp/xrpurl
+```
+
 ## CLI Parameters
 
 | Shortcut | Longform | Required | Description |
