@@ -10,8 +10,8 @@ import (
 	"github.com/grokify/simplego/net/http/httpsimple"
 	"github.com/jessevdk/go-flags"
 
-	gorippled "github.com/go-xrp/go-rippled"
-	"github.com/go-xrp/go-rippled/data"
+	gorippled "github.com/goxrp/go-rippled"
+	"github.com/goxrp/go-rippled/data"
 )
 
 type Options struct {
@@ -43,7 +43,7 @@ func main() {
 		}
 		reqBody = reqBodyStruct
 	} else if len(opts.TestData) > 0 {
-		reqBodyBytes, err := data.ExampleJsonRequest(opts.Method)
+		reqBodyBytes, err := data.ExampleJsonRequest(opts.Method, "")
 		if err != nil {
 			log.Fatal(err)
 		}

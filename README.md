@@ -7,6 +7,8 @@
 
 `xrpurl` is a command line tool to make calling `rippled` servers easy.
 
+It can either use custom request data or use test data by calling `-t`.
+
 ## Installation
 
 ```
@@ -34,11 +36,11 @@ Example request include:
 $ xpurl -m account_lines -t -x -p
 ```
 
- [build-status-svg]: https://github.com/go-xrp/xrpurl/workflows/go%20build/badge.svg?branch=master
- [build-status-url]: https://github.com/go-xrp/xrpurl/actions
- [goreport-svg]: https://goreportcard.com/badge/github.com/go-xrp/xrpurl
- [goreport-url]: https://goreportcard.com/report/github.com/go-xrp/xrpurl
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/go-xrp/xrpurl
- [docs-godoc-url]: https://pkg.go.dev/github.com/go-xrp/xrpurl
+ [build-status-svg]: https://github.com/goxrp/xrpurl/workflows/go%20build/badge.svg?branch=master
+ [build-status-url]: https://github.com/goxrp/xrpurl/actions
+ [goreport-svg]: https://goreportcard.com/badge/github.com/goxrp/xrpurl
+ [goreport-url]: https://goreportcard.com/report/github.com/goxrp/xrpurl
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/goxrp/xrpurl
+ [docs-godoc-url]: https://pkg.go.dev/github.com/goxrp/xrpurl
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/go-xrp/xrpurl/blob/master/LICENSE
+ [license-url]: https://github.com/goxrp/xrpurl/blob/master/LICENSE
