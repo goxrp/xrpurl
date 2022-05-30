@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/grokify/simplego/encoding/jsonutil"
-	"github.com/grokify/simplego/net/http/httpsimple"
+	"github.com/grokify/gohttp/httpsimple"
+	"github.com/grokify/mogo/encoding/jsonutil"
 	"github.com/jessevdk/go-flags"
 
 	gorippled "github.com/goxrp/go-rippled"
