@@ -36,7 +36,7 @@ Example request include:
 $ xpurl -m account_lines -t -x -p
 ```
 
- [build-status-svg]: https://github.com/goxrp/xrpurl/workflows/go%20build/badge.svg?branch=master
+ [build-status-svg]: https://github.com/goxrp/xrpurl/workflows/test/badge.svg?branch=master
  [build-status-url]: https://github.com/goxrp/xrpurl/actions
  [goreport-svg]: https://goreportcard.com/badge/github.com/goxrp/xrpurl
  [goreport-url]: https://goreportcard.com/report/github.com/goxrp/xrpurl
