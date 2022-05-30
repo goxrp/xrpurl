@@ -24,7 +24,7 @@ type Options struct {
 }
 
 const (
-	RippledJsonRpcUrl = "https://s1.ripple.com:51234/"
+	RippledJSONRPCURL = "https://s1.ripple.com:51234/"
 )
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 	if len(opts.Exec) > 0 {
 		req := httpsimple.SimpleRequest{
 			Method: http.MethodPost,
-			URL:    RippledJsonRpcUrl,
+			URL:    RippledJSONRPCURL,
 			Body:   reqBody,
 			IsJSON: true}
 
