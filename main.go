@@ -8,7 +8,7 @@ import (
 
 	"github.com/grokify/gohttp/httpsimple"
 	"github.com/grokify/mogo/fmt/fmtutil"
-	"github.com/jessevdk/go-flags"
+	flags "github.com/jessevdk/go-flags"
 
 	gorippled "github.com/goxrp/go-rippled"
 	"github.com/goxrp/go-rippled/data"
