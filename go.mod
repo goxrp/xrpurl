@@ -5,7 +5,7 @@ go 1.22.0
 toolchain go1.22.5
 
 require (
-	github.com/goxrp/go-rippled v0.8.2
+	github.com/goxrp/go-rippled v0.8.3
 	github.com/grokify/gohttp v0.2.7
 	github.com/grokify/mogo v0.64.9
 	github.com/jessevdk/go-flags v1.6.1

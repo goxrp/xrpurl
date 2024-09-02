@@ -14,8 +14,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
 github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTmMytcMc0KkNouC66V3BtZ4qD5fmWSiMQ=
-github.com/goxrp/go-rippled v0.8.2 h1:oG9/8LI+QhVLE+tu22a6ulH/bdHmQ4WYPN0LKHhmZsc=
-github.com/goxrp/go-rippled v0.8.2/go.mod h1:0z59tqErMg5gjQQmMPi4q03ESfW1LKdg33Zj3qdfcg4=
+github.com/goxrp/go-rippled v0.8.3 h1:UjN4Jyxq5h7DWw74stcTUmdfm5eBr+hOwrGUTnxGQ24=
+github.com/goxrp/go-rippled v0.8.3/go.mod h1:Mr7dZKwVqRx5HwlJO6jxV+acj5CxdqxovE440CFRFVc=
 github.com/grokify/gohttp v0.2.7 h1:HU8dXhUQCYKHpy69LqiK8jRYxoLtYUGx0/IZ4u5WwVQ=
 github.com/grokify/gohttp v0.2.7/go.mod h1:jcYYSbLkLi+KbGOQfLZbDrhr0yg7uWphybyfJFgZgEA=
 github.com/grokify/mogo v0.64.9 h1:sCS/or6Gk1xYOlH+3PI1TkgiALC63pvmXFsAGDD9Dg4=
