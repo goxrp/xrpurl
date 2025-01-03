@@ -1,13 +1,12 @@
 module github.com/goxrp/xrpurl
 
 go 1.22.0
-
-toolchain go1.22.5
+toolchain go1.23.4
 
 require (
 	github.com/goxrp/go-rippled v0.8.3
 	github.com/grokify/gohttp v0.2.7
-	github.com/grokify/mogo v0.64.11
+	github.com/grokify/mogo v0.67.1
 	github.com/jessevdk/go-flags v1.6.1
 )
 
@@ -23,7 +22,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.55.0 // indirect
-	golang.org/x/exp v0.0.0-20240904232852-e7e105dedf7e // indirect
-	golang.org/x/sys v0.25.0 // indirect
-	golang.org/x/text v0.18.0 // indirect
+	golang.org/x/exp v0.0.0-20241217172543-b2144cdd0a67 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 )
